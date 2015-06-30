@@ -46,6 +46,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
@@ -66,29 +68,97 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArgumentsParser.cs" />
-    <Compile Include="FlexibleProxyServerService.cs">
+    <Compile Include="Client\UiController.cs" />
+    <Compile Include="Utilities\ArgumentsParser.cs" />
+    <Compile Include="Server\FlexibleProxyServerService.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FlexibleProxyServerService.Designer.cs">
+    <Compile Include="Server\FlexibleProxyServerService.Designer.cs">
       <DependentUpon>FlexibleProxyServerService.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FlexibleProxyClientService.cs">
+    <Compile Include="Client\FlexibleProxyClientService.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FlexibleProxyClientService.Designer.cs">
+    <Compile Include="Client\FlexibleProxyClientService.Designer.cs">
       <DependentUpon>FlexibleProxyClientService.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="ui\libs\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="ui\libs\bootstrap\css\bootstrap.css.map" />
+    <None Include="ui\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="ui\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="ui\libs\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="ui\libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="ui\libs\kendoui\js\kendo.all.min.js.map" />
+    <None Include="ui\libs\kendoui\js\kendo.grid.min.js.map" />
+    <None Include="ui\libs\kendoui\js\kendo.web.min.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Client\" />
-    <Folder Include="Server\" />
+    <Folder Include="ui\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ui\css\main.css" />
+    <Content Include="ui\img\loading-image.gif" />
+    <Content Include="ui\index.html" />
+    <Content Include="ui\js\FlexibleProxyApp.js" />
+    <Content Include="ui\libs\angular\angular-ui-router.min.js" />
+    <Content Include="ui\libs\angular\angular.min.js" />
+    <Content Include="ui\libs\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="ui\libs\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="ui\libs\bootstrap\css\bootstrap.css" />
+    <Content Include="ui\libs\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ui\libs\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ui\libs\bootstrap\js\bootstrap.js" />
+    <Content Include="ui\libs\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ui\libs\bootstrap\js\npm.js" />
+    <Content Include="ui\libs\bootstrap\js\ui-bootstrap-tpls-0.12.0.min.js" />
+    <Content Include="ui\libs\jqeury\jquery-1.11.1.min.js" />
+    <Content Include="ui\libs\kendoui\css\Default\editor.png" />
+    <Content Include="ui\libs\kendoui\css\Default\imagebrowser.png" />
+    <Content Include="ui\libs\kendoui\css\Default\loading-image.gif" />
+    <Content Include="ui\libs\kendoui\css\Default\loading.gif" />
+    <Content Include="ui\libs\kendoui\css\Default\slider-h.gif" />
+    <Content Include="ui\libs\kendoui\css\Default\slider-v.gif" />
+    <Content Include="ui\libs\kendoui\css\Default\sprite.png" />
+    <Content Include="ui\libs\kendoui\css\kendo.common-material.min.css" />
+    <Content Include="ui\libs\kendoui\css\kendo.dataviz.default.min.css" />
+    <Content Include="ui\libs\kendoui\css\kendo.dataviz.min.css" />
+    <Content Include="ui\libs\kendoui\css\kendo.default.min.css" />
+    <Content Include="ui\libs\kendoui\css\kendo.rtl.min.css" />
+    <Content Include="ui\libs\kendoui\css\textures\brushed-metal.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots1.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots10.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots11.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots12.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots13.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots2.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots3.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots4.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots5.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots6.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots7.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots8.png" />
+    <Content Include="ui\libs\kendoui\css\textures\dots9.png" />
+    <Content Include="ui\libs\kendoui\css\textures\glass-lighter.png" />
+    <Content Include="ui\libs\kendoui\css\textures\glass.png" />
+    <Content Include="ui\libs\kendoui\css\textures\highlight.png" />
+    <Content Include="ui\libs\kendoui\css\textures\leather1.png" />
+    <Content Include="ui\libs\kendoui\css\textures\leather2.png" />
+    <Content Include="ui\libs\kendoui\css\textures\noise.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe1.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe2.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe3.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe4.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe5.png" />
+    <Content Include="ui\libs\kendoui\css\textures\stripe6.png" />
+    <Content Include="ui\libs\kendoui\js\kendo.all.min.js" />
+    <Content Include="ui\libs\kendoui\js\kendo.grid.min.js" />
+    <Content Include="ui\libs\kendoui\js\kendo.web.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿using System.ServiceProcess;
 
-namespace FlexibleProxy
+namespace FlexibleProxy.Server
 {
     public partial class FlexibleProxyServerService : ServiceBase
     {

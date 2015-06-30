@@ -1,6 +1,6 @@
-﻿namespace FlexibleProxy
+﻿namespace FlexibleProxy.Server
 {
-    partial class FlexibleProxyClientService
+    partial class FlexibleProxyServerService
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "FlexibleProxyServerService";
         }
 
         #endregion

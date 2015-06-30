@@ -1,4 +1,5 @@
 ﻿using FlexibleProxy;
+using FlexibleProxy.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FlexibleProxyTests

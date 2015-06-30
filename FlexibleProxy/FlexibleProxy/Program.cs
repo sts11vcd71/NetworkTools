@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceProcess;
+using FlexibleProxy.Client;
+using FlexibleProxy.Server;
+using FlexibleProxy.Utilities;
 
 namespace FlexibleProxy
 {

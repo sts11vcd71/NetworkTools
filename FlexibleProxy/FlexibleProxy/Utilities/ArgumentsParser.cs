@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FlexibleProxy
+namespace FlexibleProxy.Utilities
 {
     public class ArgumentsParser
     {
