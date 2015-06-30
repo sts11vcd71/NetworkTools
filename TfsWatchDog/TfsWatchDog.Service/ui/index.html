@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="WatchDogApp">
+    <head>
+        <title>TFS Watchdog Monitor</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="img/dog.ico">
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+    </head>
+    <body ng-controller="MainController">
+        <div class="loadingPanel" ng-show="loadingPanelVisible">
+            <br /><br /><br /><br />
+            <div class="text-center headerTitle">LOADING...</div>
+            <div class="text-center headerTitle"><img src="img/loading-image.gif" /></div>
+        </div>
+        <div class="contentDiv">
+            <header class="headerTitle">
+                <img src="img/dog.ico" width="40" height="40" />
+                <span>TFS Watchdog Monitor</span>
+            </header>
+            <br />
+            <div class="k-content">
+                {{something}}
+                <tabset>
+                    <tab heading="15.1">Iterratio</tab>
+                    <tab heading="15.1 WFA Commercial">Static content B</tab>
+                    <tab heading="15.2">Static content C</tab>
+                </tabset>
+            </div>
+        </div>
+        <script type="text/javascript" src="libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="libs/angular/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+        <script type="text/javascript" src="libs/kendoui/js/kendo.all.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

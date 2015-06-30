@@ -1,0 +1,134 @@
+﻿QX Testing Assigned To,QX.Testing.Assigned.To,String
+QX Testing State,QX.Testing.State,String
+Test Case Assigned To,Test.Case.Assigned.To,String
+Test Case End Date,Test.Case.End.Date,DateTime
+Test Case Start Date,Test.Case.Start.Date,DateTime
+Estimate Level 0,Estimate.Level.0,Double
+Scoped,Scoped.Scoped,String
+Regression,Regression.Regression,String
+Residual Work Days,Residual.Work.Days,Double
+Rejected Reason Counter,Rejected.Reason.Counter,String
+Number Of Rows,Number.Of.Rows,String
+Time To Automate,Time.To.Automate,String
+Automation Status,Automation.Status,String
+Test Script Developer,Test.Script.Developer,String
+Script,Script.Script,String
+QX Date,QX.Date,DateTime
+Estimated Completion Date,Estimated.Completion.Date,DateTime
+Wi Type,Wi.Type,String
+Prod_Build_Validated_By,Prod.Build.Validated.By,String
+Missouri_Build_Validated_By,Missouri.Build.Validated.By,String
+Demo_Build_Validated_By,Demo.Build.Validated.By,String
+QX_Build_Validated_By,QX.Build.Validated.By,String
+Prod_Validated_By,Prod.Validated.By,String
+Missouri_Validated_By,Missouri.Validated.By,String
+Demo_Validated_By,Demo.Validated.By,String
+QX_Validate_By,QX.Validate.By,String
+Prod Build,Prod.Build,String
+Missouri Build,Missouri.Build,String
+Demo_Build,Demo.Build,String
+Prod,Prod.Prod,String
+Missouri,Missouri.Missouri,String
+Demo,Demo.Demo,String
+QX Build,QX.Build,String
+QX,QX.QX,String
+Expected_Results,Expected.Results,String
+Erroneous_Results,Erroneous.Results,String
+StepsTo Reproduce,Steps.To.Reproduce,String
+Test_Case_Status,Test.Case.Status,String
+Reproducible,Reproducible.Reproducible,String
+Source_Of_Error,Source.Of.Error,String
+Failed_Test_Case,Failed.Test.Case,String
+Test_Script,Test.Script,String
+Applicable Script Suite,Applicable.Script.Suite,String
+Ipreo Severity,Ipreo.Severity,String
+Fixed_In_Version,Fixed.In.Version,String
+Fixed_In_Build,Fixed.In.Build,String
+Found_In_Version,Found.In.Version,String
+Found_In_Build,Found.In.Build,String
+QA Days,BD.Common.QADays,String
+Product Days,BD.Common.ProductDays,String
+Percent Work Remaining,BD.Common.PctWorkRemaining,String
+Non-Functional Requirements,BD.Common.NFR,String
+Capital Expenditure,BD.Common.CapEx,String
+Environment,Environment.Environment,String
+Assign To Group,Assign.To.Group,String
+Project,NSight.Workstation.TS.Fields.Project,String
+Branch,NSight.Workstation.TS.Fields.Branch,String
+Product Sponsor,NSight.Workstation.TS.Fields.ProductSponsor,String
+Act Man Days,NSight.Workstation.TS.Fields.ActualManDays,Double
+Clients Affected,NSight.Workstation.TS.Fields.ClientsAffected,String
+Configuration Information,NSight.Workstation.TS.Fields.ConfigurationInformation,PlainText
+Data Schema Changes,NSight.Workstation.TS.Fields.DataSchemaChanges,PlainText
+Metadata Changes,NSight.Workstation.TS.Fields.MetadataChanges,PlainText
+Impact Analysis,NSight.Workstation.TS.Fields.ImpactAnalysis,Html
+Completion Status,NSight.Workstation.TS.Fields.CompletionStatus,String
+MSA Phase,NSight.Workstation.TS.Fields.MSAPhase,String
+Billable Days,NSight.Workstation.TS.Fields.BillableManDays,Double
+Requirements Specification,NSight.Workstation.TS.Fields.RequirementsSpecification,String
+QA Date,NSight.Workstation.TS.Fields.QADate,DateTime
+Visible to Client,NSight.Workstation.TS.Fields.ClientVisible,String
+Billable,NSight.Workstation.TS.Fields.Billable,String
+Origination Date,NSight.Workstation.TS.Fields.OriginationDate,DateTime
+Originator,NSight.Workstation.TS.Fields.Originator,String
+NSightPriority,NSight.Workstation.TS.Fields.Priority,String
+Client Status,NSight.Workstation.TS.Fields.ClientStatus,String
+Resolution Comment,NSight.Workstation.TS.Fields.ResolutionComment,PlainText
+Client Comment,NSight.Workstation.TS.Fields.ClientComment,Html
+NSight Comment,NSight.Workstation.TS.Fields.NSightComment,Html
+Est Man Days,NSight.Workstation.TS.Fields.EstimatedManDays,Double
+Release Date,NSight.Workstation.TS.Fields.ReleaseDate,DateTime
+Related Item,NSight.Workstation.TS.Fields.RelatedItem,String
+Work Category,NSight.Workstation.TS.Fields.WorkCategory,String
+Function,NSight.Workstation.TS.Fields.Function,String
+Scale Estimate,NSight.Workstation.TS.Fields.ScaleEstimate,String
+Client Ref,NSight.Workstation.TS.Fields.ClientRef,String
+Client,NSight.Workstation.TS.Fields.Client,String
+Task Hierarchy,Microsoft.VSTS.Scheduling.TaskHierarchy,String
+Finish Date,Microsoft.VSTS.Scheduling.FinishDate,DateTime
+Start Date,Microsoft.VSTS.Scheduling.StartDate,DateTime
+Baseline Work,Microsoft.VSTS.Scheduling.BaselineWork,Double
+Completed Work,Microsoft.VSTS.Scheduling.CompletedWork,Double
+Remaining Work,Microsoft.VSTS.Scheduling.RemainingWork,Double
+Discipline,Microsoft.VSTS.Common.Discipline,String
+Exit Criteria,Microsoft.VSTS.Common.ExitCriteria,String
+Integration Build,Microsoft.VSTS.Build.IntegrationBuild,String
+Rank,Microsoft.VSTS.Common.Rank,String
+Closed By,Microsoft.VSTS.Common.ClosedBy,String
+Closed Date,Microsoft.VSTS.Common.ClosedDate,DateTime
+Resolved Reason,Microsoft.VSTS.Common.ResolvedReason,String
+Resolved By,Microsoft.VSTS.Common.ResolvedBy,String
+Resolved Date,Microsoft.VSTS.Common.ResolvedDate,DateTime
+Activated By,Microsoft.VSTS.Common.ActivatedBy,String
+Activated Date,Microsoft.VSTS.Common.ActivatedDate,DateTime
+State Change Date,Microsoft.VSTS.Common.StateChangeDate,DateTime
+Issue,Microsoft.VSTS.Common.Issue,String
+Tags,System.Tags,PlainText
+Related Link Count,System.RelatedLinkCount,Integer
+History,System.History,History
+Description,System.Description,Html
+Created By,System.CreatedBy,String
+Created Date,System.CreatedDate,DateTime
+Work Item Type,System.WorkItemType,String
+Assigned To,System.AssignedTo,String
+Reason,System.Reason,String
+Changed By,System.ChangedBy,String
+Rev,System.Rev,Integer
+Watermark,System.Watermark,Integer
+Authorized Date,System.AuthorizedDate,DateTime
+State,System.State,String
+Title,System.Title,String
+Authorized As,System.AuthorizedAs,String
+Area ID,System.AreaId,Integer
+ID,System.Id,Integer
+Changed Date,System.ChangedDate,DateTime
+Revised Date,System.RevisedDate,DateTime
+Area Path,System.AreaPath,TreePath
+Node Name,System.NodeName,String
+Attached File Count,System.AttachedFileCount,Integer
+Hyperlink Count,System.HyperLinkCount,Integer
+Team Project,System.TeamProject,String
+External Link Count,System.ExternalLinkCount,Integer
+Iteration ID,System.IterationId,Integer
+Iteration Path,System.IterationPath,TreePath
+
