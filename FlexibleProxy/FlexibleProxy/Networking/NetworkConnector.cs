@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace FlexibleProxy.Networking
 {
@@ -7,12 +6,12 @@ namespace FlexibleProxy.Networking
     {
         public event Action ContentReceived;
 
-        public Stream ReceiveData()
+        public byte[] ReceiveData()
         {
             return null;
         }
 
-        public void SendData(Stream data)
+        public void SendData(byte[] data)
         {
             
         }

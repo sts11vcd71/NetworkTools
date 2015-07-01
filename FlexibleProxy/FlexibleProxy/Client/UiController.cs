@@ -11,7 +11,7 @@ namespace FlexibleProxy.Client
     public class UiController : ApiController
     {
 #if DEBUG
-        private const string UiFilesRootPath = @"D:\Projects\NetworkTools\FlexibleProxy\FlexibleProxy\ui\"; 
+        private const string UiFilesRootPath = @"..\..\ui\"; 
 #else 
         private const string UiFilesRootPath = String.Empty; 
 #endif
