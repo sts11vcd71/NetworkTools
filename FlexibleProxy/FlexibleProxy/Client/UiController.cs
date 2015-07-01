@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Web.Http;
 using Microsoft.Win32;
 
@@ -10,10 +11,11 @@ namespace FlexibleProxy.Client
     public class UiController : ApiController
     {
 #if DEBUG
-        private const string UiFilesRootPath = @"D:\Projects\Experimental\NetworkTools\FlexibleProxy\FlexibleProxy\ui\"; 
+        private const string UiFilesRootPath = @"D:\Projects\NetworkTools\FlexibleProxy\FlexibleProxy\ui\"; 
 #else 
         private const string UiFilesRootPath = String.Empty; 
 #endif
+        private const string NotFound404Content = @"<html><body><h1>Not found!</h1></body></html>";
 
         public string GetContentType(string fname)
         {
@@ -42,11 +44,20 @@ namespace FlexibleProxy.Client
         public HttpResponseMessage Get(string fullPath)
         {
             string filePhisicalPath = Path.Combine(UiFilesRootPath, fullPath);
-            if (!File.Exists(filePhisicalPath))
-                return new HttpResponseMessage(HttpStatusCode.NotFound);
-            var stream = new FileStream(filePhisicalPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite, 0x1000, FileOptions.SequentialScan);
-            var result = new HttpResponseMessage(HttpStatusCode.OK);
-            result.Content = new StreamContent(stream);
+            Stream stream;
+            HttpStatusCode statusCode;
+            if (File.Exists(filePhisicalPath))
+            {
+                stream = new FileStream(filePhisicalPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite,
+                    0x1000, FileOptions.SequentialScan);
+                statusCode = HttpStatusCode.OK;
+            }
+            else
+            {
+                stream = new MemoryStream(Encoding.UTF8.GetBytes(NotFound404Content));
+                statusCode = HttpStatusCode.NotFound;
+            }
+            var result = new HttpResponseMessage(statusCode) {Content = new StreamContent(stream)};
             var mimeType = GetContentType(fullPath);
             result.Content.Headers.ContentType = new MediaTypeHeaderValue(mimeType);
             return result;

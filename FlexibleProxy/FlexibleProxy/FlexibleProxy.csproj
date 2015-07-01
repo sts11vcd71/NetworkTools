@@ -68,7 +68,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Networking\IConnector.cs" />
+    <Compile Include="Networking\NetworkConnector.cs" />
+    <Compile Include="Repositories\ISettingsFileRepository.cs" />
+    <Compile Include="Settings\Channel.cs" />
+    <Compile Include="Settings\DestinationHost.cs" />
+    <Compile Include="Client\ChannelsController.cs" />
     <Compile Include="Client\UiController.cs" />
+    <Compile Include="Server\DataTransferController.cs" />
+    <Compile Include="Server\SettingsController.cs" />
+    <Compile Include="Settings\ProxySettings.cs" />
+    <Compile Include="Repositories\SettingsFileRepository.cs" />
     <Compile Include="Utilities\ArgumentsParser.cs" />
     <Compile Include="Server\FlexibleProxyServerService.cs">
       <SubType>Component</SubType>
