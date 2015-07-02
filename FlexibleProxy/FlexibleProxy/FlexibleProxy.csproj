@@ -69,7 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Networking\IConnector.cs" />
-    <Compile Include="Networking\NetworkConnector.cs" />
+    <Compile Include="Networking\IncommingTcpConnection.cs" />
+    <Compile Include="Networking\IOutgoingConnector.cs" />
+    <Compile Include="Networking\OutgoingTcpConnector.cs" />
     <Compile Include="Repositories\ISettingsFileRepository.cs" />
     <Compile Include="Settings\Channel.cs" />
     <Compile Include="Settings\DestinationHost.cs" />
